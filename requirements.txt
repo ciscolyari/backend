@@ -5,3 +5,5 @@ passlib
 python-jose
 bcrypt
 python-multipart
+pwdlib[argon2]
+pydantic[email]
