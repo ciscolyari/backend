@@ -9,6 +9,7 @@ class Notes(Base):
     title = Column(String)
     body = Column(String)
     user_id = Column(Integer, ForeignKey("user.id"))
+    attachment = Column(String, nullable=True)
 
     user = relationship("User", back_populates="notes")
 
